@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>G&a-Lapto service</title>
+	<link rel="icon" href="./assets/img/logo.png ">
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	               
+	                <li>
+	                    <a href="signin.html" >Login</a>
+	                </li>
+	            </ul>
+	        </nav>
+	        
+
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Nombre de usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+	            </a>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="banner">
+	    <div class="banner-body">
+	        <h3 class="text-uppercase">Bienvenido a G&A</h3>
+	        <p>Laptop Service</p>
+	        <a href="/views/nuevoCliente" class="btn btn-warning">SOLICITA LLAMADA</a>
+	        <br><br>
+	        <a href="/views/nuevoProducto" class="btn btn-warning">NUEVO PRODUCTO</a>
+	        <a href="/views/consult" class="btn btn-warning">CONSULTA PRODUCTO</a>
+	    </div>
+	</div>
+
+	<div class="container container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros servicios</h3>
+	    <br>
+	    <div class="row">
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-shipping-fast fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Envíos a domicilio</h5>
+	            <p class="text-center">Programa tus compras de la semana y nos encargamos de llevarlas a tu hogar.
+
+					Beneficios
+					Puedes elegir la fecha y el rango horario de tu preferencia.
+					No necesitas cargarlo, nosotros te lo llevamos.</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-store-alt fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Recojo en tienda </h5>
+	            <p class="text-center">Programa tu pedido y recógelo en tu tienda favorita.</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-sharp fa-solid fa-warehouse fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Venta al por mayor</h5>
+	            <p class="text-center">G&A - Laptop service, tiene  las mejores marcas  para tu negocio. ven y llevatelo todo </p>
+	        </div>
+	    </div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class ="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> G&A-Laptop service 2022</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class ="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Lima - PERU</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Lima, santiago de surco 567</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

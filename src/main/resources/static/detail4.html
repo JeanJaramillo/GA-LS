@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>G&a-Lapto service</title>
+	<link rel="icon" href="./assets/img/logo.png ">
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	              
+	                <li>
+	                    <a href="signin.html" >Acceso</a>
+	                </li>
+	            </ul>
+	        </nav>
+	        
+
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Nombre de usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+	            </a>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Detalles de producto </h3>
+	    <hr>
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-12 col-lg-5">
+	                <!--cover-->
+	                <figure class="full-box">
+	                    <img class="img-fluid" src="./assets/img/prod4.webp" alt="prod4">
+	                </figure>
+
+	                <!-- Galery -->
+	                <h5 class="poppins-regular text-uppercase" style="padding-top: 70px;">Galería de imágenes</h5>
+	                <hr>
+	                <div class="galery-details full-box">
+
+	                    <!--cover-->
+	                    <figure class="full-box">
+	                        <a data-fslightbox="gallery" href="./assets/img/prod4.webp">
+	                            <img class="img-fluid" src="./assets/img/prod4.webp" alt="prod3">
+	                        </a>
+	                    </figure>
+                        <figure class="full-box">
+	                        <a data-fslightbox="gallery" href="./assets/img/prod4-1.webp">
+	                            <img class="img-fluid" src="./assets/img/prod4-1.webp" alt="prod3">
+	                        </a>
+	                    </figure>
+	                
+
+	                </div>
+	            </div>
+	            <div class="col-12 col-lg-7">
+
+	                <h4 class="font-weight-bold poppins-regular tittle-details">Toner Xerox 106r04349 Dual Pack B210 B215 B205
+                    </h4>
+
+	                <p class="text-justify lead" style="padding: 40px 0;">
+	                    <span class="text-info lead font-weight-bold">Descripción:</span><br>
+                        Los Cartuchos de Tóner Xerox con sub-código de identidad 106R04349 viene con un chip inteligente insertado en el cartucho 106R04349 la cual contabiliza las impresiones de color Black que sé realizan, de igual manera el código del tóner se encuentra grabado en el cartucho, en modo de alto relieve el cual es 106R04349, que vendría a ser su identificador como producto de la casa Xerox. El Tóner Xerox 106R04349 tiene un rendimiento excelente si se trata de impresiones de calidad, la cual te rinde para 6.000 páginas de impresión aproximadamente, este cartucho 106R04349 viene con insumo tecnológico de color Black la cual ayuda a mantener su impresora en óptimas condiciones,
+                         para su rendimiento máximo del color Black se recomienda imprimir en hojas nuevas y no recicladas.
+	                </p>
+
+	                <p class="lead font-weight-bold">Precio: S/ 599</p>
+
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Carlos Alfaro 2021</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >El Salvador</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> San Salvador, El Salvador, Centro América</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- fslightbox -->
+	<script src="./js/fslightbox.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

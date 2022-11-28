@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>G&a-Lapto service</title>
+	<link rel="icon" href="./assets/img/logo.png ">
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	              
+	                <li>
+	                    <a href="signin.html" >Acceso</a>
+	                </li>
+	            </ul>
+	        </nav>
+	       
+
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Nombre de usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+	            </a>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Menú de platillos</h3>
+	    <p class="text-justify">Una tinta para impresora te permite producir una extensa gama de gráficos, textos, dibujos, planos y lo que desees imprimir en general. Además, tienes que saber que existen modelos de impresoras que requieren distintos tipos de tinta. Las impresoras multifuncionales, las cuales actúan como impresora, escáner, correo y fotocopiadora. Las impresoras láser usan tintas secas que son combinadas con el papel a través de electricidad estática y calor. Las impresoras monocromáticas trabajan solo con un tipo de tinta, en este caso, la tinta negra.
+
+			Siempre es útil guardar cartuchos para impresoras en casa para que nada te impida realizar tus actividades. Por eso, descubre el amplio catálogo de las mejores marcas de tintas para impresoras que G&A-Laptop Service tiene para ti:
+			<br>
+			Tinta HP
+			Tinta Epson
+			Tinta Esun
+			Tinta Brother
+			Tinta Canon
+			<br>
+			Solo en G&A-Laptop Service online. </p>
+
+	    
+
+	    <div class="container-cards full-box" style="padding-bottom: 40px;">
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/img/prod1.webp" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Botella Individual Epson 544 Magenta</h5>
+	                  <p class="card-product-price text-center fw-bolder">S/ 49.90</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	                 
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/img/prod3.webp" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Toner Brother Tn217m Magenta 2300 Paginas - TONER BROTHER TN-217 MAGENTA ORIGINAL 2300 PAG. NUEVO PRESENTACION</h5>
+	                  <p class="card-product-price text-center fw-bolder">S/ 549</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  &nbsp; &nbsp;
+	                  <a href="detail2.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	                 
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/img/prod2.webp" alt="prod2">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Impresora de Sublimación de Tinta Epson SureColor F170</h5>
+	                  <p class="card-product-price text-center fw-bolder">S/ 1890</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                 
+	                  &nbsp; &nbsp;
+	                  <a href="detail3.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	                 
+	              </div>
+	          </div>
+	      </div>
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/img/prod4.webp" alt="prod4">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Toner Xerox 106r04349 Dual Pack B210 B215 B205/h5>
+	                  <p class="card-product-price text-center fw-bolder">S/ 599</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                 
+	                  &nbsp; &nbsp;
+	                  <a href="detail4.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	                 
+	              </div>
+	          </div>
+	      </div>
+
+	    </div>
+
+
+
+
+	    <nav aria-label="Page navigation example">
+	        <ul class="pagination justify-content-center">
+	            <li class="page-item">
+	                <a class="page-link" href="#">Anterior</a>
+	            </li>
+	            <li class="page-item">
+	                <a class="page-link" href="menu.html">1</a>
+	            </li>
+	            
+	            <li class="page-item">
+	                <a class="page-link" href="#">Siguiente</a>
+	            </li>
+	        </ul>
+	    </nav>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="saucerModal" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Buscar platillo</h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    <input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{4,25}" class="form-control" name="buscar_platillo" id="buscar_platillo" maxlength="25">
+	                    <label for="buscar_platillo" class="form-label">¿Qué estás buscando?</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class ="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> G&A-Laptop service 2022</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class ="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Lima - PERU</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Lima, santiago de surco 567</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

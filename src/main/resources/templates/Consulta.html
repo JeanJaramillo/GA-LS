@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+	crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="style.css">
+<!-- JavaScript Bundle with Popper -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+	crossorigin="anonymous"></script>
+<title>Consultas</title>
+</head>
+<body style="background-image: url('https://images3.alphacoders.com/122/122577.jpg');">
+	<h1 th:if="${mensaje!='OK'}">Error al Recuperar el ID</h1>
+	<div style="padding:100px" align="center">
+	<form th:action=@{/views/modificar} method="post" th:object="${Producto}" style="background-color: white;">
+		<fieldset>
+			<legend>Datos del Cliente</legend>
+			<div class="mb-3">
+				<label for="disabledTextInput" class="form-label">ID DEL CLIENTE</label> 
+				<input type="text" id="IDProducto"
+					class="form-control" placeholder="Disabled input" th:field="*{id}">
+			</div>
+			<div class="mb-3">
+				<label for="disabledSelect" class="form-label">Nombre</label>
+				 <input type="text" class="form-control" id="nombreProducto"
+				 th:field="*{name}">
+			</div>
+			<div class="mb-3">
+				<label for="disabledSelect" class="form-label">Apellido</label>
+				<input type="text" id="stockProduc"
+					class="form-control" placeholder="input" th:field="*{stockProduc}">
+			</div>
+			<div class="mb-3">
+				<label for="disabledSelect" class="form-label">Email</label>
+				<input type="text" id="stockProduc"
+					class="form-control" placeholder="input" th:field="*{stockProduc}">
+			</div>
+			<div class="mb-3">
+				<label for="disabledSelect" class="form-label">Pais</label>
+				<input type="text" id="stockProduc"
+					class="form-control" placeholder="input" th:field="*{stockProduc}">
+			</div>
+			<div class="mb-3">
+				<label for="disabledSelect" class="form-label">Estado</label>
+				<input type="text" id="stockProduc"
+					class="form-control" placeholder="input" th:field="*{stockProduc}">
+			</div>
+			<div class="mb-3">
+				<label for="disabledSelect" class="form-label">Telefono</label>
+				<input type="text" id="almacenProducto"
+					class="form-control"  th:field="*{almacenProducto}">
+			</div>
+			<button type="submit" class="btn btn-secondary">Grabar</button>
+		</fieldset>
+	</form>
+		<a href="/"><input type="button" class="btn btn-primary" value="Regresar" style="background-color: white; color: black;"/></a>
+	</div>
+</body>
+</html>
