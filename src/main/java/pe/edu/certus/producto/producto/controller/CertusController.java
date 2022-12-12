@@ -36,7 +36,7 @@ public class CertusController {
 		}
 	
 	
-	@GetMapping("/views/consulta")
+	@GetMapping("/views/modificar")
 	public String Consulta(@RequestParam(name = "id", required = false, defaultValue = "1") Long id, Model model) {
 		
 		ProductoData bean = new ProductoData();
@@ -60,7 +60,7 @@ public class CertusController {
 		} else {
 			model.addAttribute("mensaje", "No existe Producto con el ID");
 		}
-		return "Consulta";
+		return "Modificar";
 	}
 	
 	@GetMapping("/views/solicitar")
@@ -149,7 +149,7 @@ public class CertusController {
 		p.setId(producto.getId());
 
 		productoServices.guardarProducto(p);
-		return "redirect:/views/consulta?id=" + p.getId();
+		return "redirect:/views/modificar?id=" + p.getId();
 	}
 	
 	
