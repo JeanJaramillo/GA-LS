@@ -18,8 +18,8 @@ public class AppStartUpEvent implements ApplicationListener<ApplicationReadyEven
 	public void onApplicationEvent(ApplicationReadyEvent event) {
 		// TODO Auto-generated method stub
 		System.out.println("TODO OK.");
-		Iterable<Producto> productos = this.productoRepository.findAll();
-		productos.forEach(System.out::println);
+		/*Iterable<Producto> productos = this.productoRepository.findAll();
+		productos.forEach(System.out::println);*/
 	}
 
 }

@@ -135,7 +135,7 @@ public class CertusController {
 		p.setAlmacenProducto(producto.getAlmacenProducto());
 
 		productoServices.guardarProducto(p);
-		return "redirect:/views/consulta";
+		return "redirect:/views/modificar?id=" + p.getId();
 	}
 
 	@PostMapping("/views/modificar")
